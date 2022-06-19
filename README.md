@@ -4,6 +4,10 @@
 ### Deliverable 1:
 From the output below we can see that:
 
+<img width="594" alt="Deliverable 1-1" src="https://user-images.githubusercontent.com/100812308/174486086-b76b2e58-164b-40d9-9716-2c1d54b98c3d.png">
+
+
+<img width="608" alt="Deliverable 1-2" src="https://user-images.githubusercontent.com/100812308/174486077-b93666a5-52a3-4ae1-ade0-9af0c5dab075.png">
 
 
 The vehicle length, and vehicle ground clearance are statistically likely to provide non-random amounts of variance to the model. That is to say, the vehicle length and vehicle ground clearance have a significant impact on miles per gallon on the MechaCar prototype. Conversely, the vehicle weight, spoiler angle, and All Wheel Drive (AWD) have p-Values that indicate a random amount of variance with the dataset.
@@ -19,9 +23,11 @@ The Suspension Coil dataset provided for the MechaCar contains the results of te
 
 First looking at all manufacturing lots:
 
+<img width="490" alt="total_summary" src="https://user-images.githubusercontent.com/100812308/174486109-50c6135b-b55e-43ac-8aca-b3f8a8c01b06.png">
 
 Diving a little deeper into each of the 3 lots:
 
+<img width="654" alt="3 lots" src="https://user-images.githubusercontent.com/100812308/174486117-eb3f86f0-9243-43d4-a888-1fcc9e351af2.png">
 
 With the understanding that the design specifications for the MechaCar suspension coils mandate that the variance of the suspension coils cannot exceed 100 pounds per square inch (PSI) .
 
@@ -31,6 +37,7 @@ Similarly, but significantly more consistent, Lot 1 and Lot 2 are well within th
 
 This very simple boxplot illustrates the differences between the lots:
 
+![Box plot](https://user-images.githubusercontent.com/100812308/174486225-8eeb61f2-247b-48b6-86ac-fd72a1d9ccf7.png)
 
 
 ### Deliverable 3: 
@@ -38,11 +45,16 @@ The next step is to conduct a t-test on the suspension coil data to determine wh
 
 There is a summary of the t-test results across all manufacturing lots
 
+<img width="510" alt="summary t-test" src="https://user-images.githubusercontent.com/100812308/174486233-08d85b32-eeca-4774-b12f-01cb38f78c74.png">
+
 
 
 From here we can see the true mean of the sample is 1498.78, which we also saw in the summary statistics above. With a p-Value of 0.06, which is higher than the common significance level of 0.05, there is NOT enough evidence to support rejecting the null hypothesis. That is to say, the mean of all three of these manufacturing lots is statistically similar to the presumed population mean of 1500.
 
 Next looking at each individual lots:
+
+<img width="503" alt="t-test 3 lots" src="https://user-images.githubusercontent.com/100812308/174486242-cee7239a-e989-43ba-a27a-01b449a94694.png">
+
 
 Lot 1 sample actually has the true sample mean of 1500, again as we saw in the summary statistics above. With a p-Value of 1, clearly we cannot reject (i.e. accept) the null hypothesis that there is no statistical difference between the observed sample mean and the presumed population mean (1500).
 Lot 2 has essentially the same outcome with a sample mean of 1500.02, a p-Value of 0.61; the null hypothesis cannot be rejected, and the sample mean and the population mean of 1500 are statistically similar.
